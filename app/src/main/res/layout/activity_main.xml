@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/splash_back"
-    tools:context=".SplashActivity">
+    tools:context=".LogIn_Signup.SplashActivity">
 
     <com.airbnb.lottie.LottieAnimationView
         android:id="@+id/lottie"
@@ -28,7 +28,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="108dp"
         android:fontFamily="@font/alfa_slab_one"
-        android:text="Movix"
+        android:text="Kipindi Tv"
         android:textColor="@color/white"
         android:textSize="50dp"
         app:layout_constraintEnd_toEndOf="parent"

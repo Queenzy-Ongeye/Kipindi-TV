@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "694415889419",
+    "project_id": "kipinditv-85275",
+    "storage_bucket": "kipinditv-85275.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:694415889419:android:8d95ae7abd70200d4d230e",
+        "android_client_info": {
+          "package_name": "dev.queen.movieapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "694415889419-ah7p412g5dua8ckj39fv73otkbvkc3k9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBwWb5Axp4gBdxU28qFpEwoxYU357djHrs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "694415889419-ah7p412g5dua8ckj39fv73otkbvkc3k9.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

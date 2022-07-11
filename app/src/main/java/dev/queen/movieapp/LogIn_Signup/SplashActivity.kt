@@ -1,9 +1,10 @@
-package dev.queen.movieapp
+package dev.queen.movieapp.LogIn_Signup
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.airbnb.lottie.LottieAnimationView
+import dev.queen.movieapp.R
 
 class SplashActivity : AppCompatActivity() {
     lateinit var lottie: LottieAnimationView
@@ -12,7 +13,6 @@ class SplashActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         lottie = findViewById(R.id.lottie)
-//        startActivity(Intent(this, LogIn::class.java))
-
+        startActivity(Intent(this, TeaserActivity::class.java))
     }
 }
