@@ -4,90 +4,96 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#06143E"
-    tools:context=".LogIn_Signup.LogIn">
+    android:background="@color/blue"
+    tools:context=".LogIn_Signup.LogIn"
+    tools:ignore="Autofill, LabelFor">
 
-    <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/tilUser"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginEnd="8dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/guideline2">
-
-        <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/etUser"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="@string/username_email" />
-    </com.google.android.material.textfield.TextInputLayout>
-
-    <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/tilPassword"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="32dp"
-        android:layout_marginEnd="8dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tilUser">
-
-        <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/etPassword"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="@string/password" />
-    </com.google.android.material.textfield.TextInputLayout>
-
-    <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/guideline2"
+    <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        app:layout_constraintGuide_percent="0.4" />
+        android:text="Sign In"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:fontFamily="@font/alfa_slab_one"
+        app:layout_constraintBottom_toTopOf="@+id/etSignInEmail"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvLL"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="or"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/btnCreateAccount2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnSignIn" />
+
+    <EditText
+        android:id="@+id/etSignInEmail"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginVertical="20dp"
+        android:hint="email"
+        android:inputType="textEmailAddress"
+        android:padding="10dp"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toTopOf="@+id/etSignInPassword"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_chainStyle="packed" />
+
+    <EditText
+        android:id="@+id/etSignInPassword"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="20dp"
+        android:hint="password"
+        android:inputType="textPassword"
+        android:maxLength="8"
+        android:padding="10dp"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toTopOf="@+id/btnSignIn"
+        app:layout_constraintEnd_toEndOf="@+id/etSignInEmail"
+        app:layout_constraintStart_toStartOf="@+id/etSignInEmail"
+        app:layout_constraintTop_toBottomOf="@+id/etSignInEmail" />
 
     <Button
-        android:id="@+id/btnLogIn"
-        android:layout_width="350dp"
-        android:layout_height="60dp"
-        android:layout_marginTop="50dp"
-        android:backgroundTint="#59D0EE"
+        android:id="@+id/btnSignIn"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="20dp"
+        android:backgroundTint="@color/teal_200"
+        android:text="Sign In"
         android:fontFamily="@font/lilita_one"
-        android:text="@string/sign_in"
         android:textSize="20sp"
-        app:cornerRadius="5dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tilPassword" />
+        android:textAllCaps="false"
+        app:layout_constraintBottom_toTopOf="@+id/btnCreateAccount2"
+        app:layout_constraintEnd_toEndOf="@+id/etSignInPassword"
+        app:layout_constraintStart_toStartOf="@+id/etSignInPassword"
+        app:layout_constraintTop_toBottomOf="@+id/etSignInPassword" />
 
-    <TextView
-        android:id="@+id/tvRegister"
-        android:layout_width="wrap_content"
+    <Button
+        android:id="@+id/btnCreateAccount2"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="44dp"
-        android:fontFamily="@font/poppins"
-        android:text="@string/don_t_have_an_account"
-        android:textColor="#FFFFFF"
+        android:layout_marginVertical="20dp"
         android:textSize="20sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnLogIn" />
+        android:text="Create Account"
+        android:textAllCaps="false"
+        android:fontFamily="@font/lilita_one"
+        android:backgroundTint="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/btnSignIn"
+        app:layout_constraintStart_toStartOf="@+id/btnSignIn"
+        app:layout_constraintTop_toBottomOf="@+id/btnSignIn" />
 
-    <TextView
-        android:id="@+id/tvrreg"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
-        android:text="@string/register"
-        android:textColor="#59D0EE"
-        android:textSize="15dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tvRegister" />
 </androidx.constraintlayout.widget.ConstraintLayout>
