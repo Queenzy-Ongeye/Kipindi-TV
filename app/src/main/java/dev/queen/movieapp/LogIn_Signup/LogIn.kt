@@ -5,11 +5,10 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.EditText
 import android.widget.Toast
-import com.google.firebase.auth.FirebaseAuth
 import dev.queen.movieapp.CreateAccountActivity
+import dev.queen.movieapp.FirebaseUtils.firebaseAuth
 import dev.queen.movieapp.HomeActivity
 import dev.queen.movieapp.databinding.ActivityLogInBinding
-import dev.queen.movieapp.firebaseAuth
 
 class LogIn : AppCompatActivity() {
     lateinit var bindingLogIn: ActivityLogInBinding
@@ -20,12 +19,16 @@ class LogIn : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         bindingLogIn = ActivityLogInBinding.inflate(layoutInflater)
         setContentView(bindingLogIn.root)
+        signInArray = arrayOf(
+            bindingLogIn.etSignInEmail,
+            bindingLogIn.etSignInEmail
+        )
         setClicks()
     }
 
     fun setClicks(){
         bindingLogIn.btnSignIn.setOnClickListener {
-            startActivity(Intent(this, HomeActivity::class.java))
+            signInUser()
         }
 
         bindingLogIn.btnCreateAccount2.setOnClickListener {
@@ -33,7 +36,7 @@ class LogIn : AppCompatActivity() {
         }
     }
 
-    private fun notEmpty(): Boolean = signEmail.isNotEmpty() && signPass.isEmpty()
+    private fun notEmpty(): Boolean = bindingLogIn.etSignInEmail.text.toString().trim().isNotEmpty() && bindingLogIn.etSignInPassword.text.toString().trim().isEmpty()
 
     private fun signInUser(){
         signEmail = bindingLogIn.etSignInEmail.text.toString().trim()
@@ -51,7 +54,7 @@ class LogIn : AppCompatActivity() {
             }
         }else {
             signInArray.forEach { input ->
-                if (input.toString().toString().isEmpty()){
+                if (input.toString().isEmpty()){
                     input.error = "${input.hint} is required"
                 }
             }

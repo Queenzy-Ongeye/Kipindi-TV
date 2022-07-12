@@ -7,13 +7,12 @@ import android.widget.Toast
 import dev.queen.movieapp.R
 import com.google.firebase.analytics.FirebaseAnalytics
 import com.google.firebase.auth.FirebaseAuth
+import dev.queen.movieapp.FirebaseUtils.firebaseAuth
 import dev.queen.movieapp.databinding.ActivityHomeBinding
 
-
-private var mFirebaseAnalytics: FirebaseAnalytics? = null
-lateinit var bindingHome: ActivityHomeBinding
-lateinit var firebaseAuth: FirebaseAuth
 class HomeActivity : AppCompatActivity() {
+    private var mFirebaseAnalytics: FirebaseAnalytics? = null
+    lateinit var bindingHome: ActivityHomeBinding
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         bindingHome = ActivityHomeBinding.inflate(layoutInflater)

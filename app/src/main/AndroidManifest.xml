@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="dev.queen.movieapp">
-
+    <uses-permission android:name="android.permission.INTERNET" />
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -13,9 +13,7 @@
             android:name=".CreateAccountActivity"
             android:exported="false" />
         <activity
-            android:name=".LogIn_Signup.RegisterActivity"
-            android:exported="false" />
-        <activity
+            android:theme="@style/splash"
             android:name=".LogIn_Signup.TeaserActivity"
             android:exported="false" />
         <activity

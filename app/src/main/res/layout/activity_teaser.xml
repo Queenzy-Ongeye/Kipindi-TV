@@ -12,38 +12,45 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="@font/poppins"
-        android:text="Get the latest movies, Kid's shows, romance and drama"
+        android:text="@string/teaser_info"
         android:textAlignment="center"
         android:textColor="@color/white"
-        android:textSize="20dp"
+        android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.397" />
+        app:layout_constraintVertical_bias="0.369" />
 
     <Button
         android:id="@+id/btnTeaserLogin"
-        android:layout_width="317dp"
+        android:layout_width="0dp"
         android:layout_height="63dp"
-        android:layout_marginTop="160dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="116dp"
+        android:layout_marginEnd="24dp"
         android:backgroundTint="#59D0EE"
         android:text="Sign In"
-        app:cornerRadius="5dp"
+        app:cornerRadius="17dp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tvInfo" />
 
     <Button
         android:id="@+id/btnSignUp"
-        android:layout_width="317dp"
+        android:layout_width="0dp"
         android:layout_height="63dp"
-        android:layout_marginTop="64dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="24dp"
         android:backgroundTint="@color/cardview_shadow_end_color"
         android:text="Register"
-        app:cornerRadius="5dp"
+        app:cornerRadius="17dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnTeaserLogin" />
+        app:layout_constraintTop_toBottomOf="@+id/btnTeaserLogin"
+        app:strokeColor="@color/teal_200"
+        app:strokeWidth="5dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>

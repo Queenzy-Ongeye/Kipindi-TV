@@ -1,33 +1,33 @@
 {
   "project_info": {
-    "project_number": "694415889419",
-    "project_id": "kipinditv-85275",
-    "storage_bucket": "kipinditv-85275.appspot.com"
+    "project_number": "1078327645973",
+    "project_id": "kipindi-tv",
+    "storage_bucket": "kipindi-tv.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:694415889419:android:8d95ae7abd70200d4d230e",
+        "mobilesdk_app_id": "1:1078327645973:android:b4aa4a637de6c48d527b1c",
         "android_client_info": {
           "package_name": "dev.queen.movieapp"
         }
       },
       "oauth_client": [
         {
-          "client_id": "694415889419-ah7p412g5dua8ckj39fv73otkbvkc3k9.apps.googleusercontent.com",
+          "client_id": "1078327645973-b5h5q5a3mpeqlpakb6in7447dm8salb8.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyBwWb5Axp4gBdxU28qFpEwoxYU357djHrs"
+          "current_key": "AIzaSyCtlrlaJ6P7GDUPbvdO2z1lIPEGpXw4_nw"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "694415889419-ah7p412g5dua8ckj39fv73otkbvkc3k9.apps.googleusercontent.com",
+              "client_id": "1078327645973-b5h5q5a3mpeqlpakb6in7447dm8salb8.apps.googleusercontent.com",
               "client_type": 3
             }
           ]
