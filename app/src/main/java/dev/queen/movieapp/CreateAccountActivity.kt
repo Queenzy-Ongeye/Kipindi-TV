@@ -86,6 +86,7 @@ class CreateAccountActivity : AppCompatActivity() {
                         startActivity(Intent(this, HomeActivity::class.java))
                         finish()
                     } else {
+//                        task.result.toString()
                         Toast.makeText(this, "Failed to Authenticate", Toast.LENGTH_LONG).show()
                     }
                 }
