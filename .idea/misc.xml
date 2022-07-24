@@ -5,7 +5,10 @@
       <map>
         <entry key="app/src/main/res/font/poppins.xml" value="0.17314814814814813" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.19375" />
+        <entry key="app/src/main/res/layout/activity_register.xml" value="0.19375" />
+        <entry key="app/src/main/res/layout/activity_sign_in.xml" value="0.19375" />
         <entry key="app/src/main/res/layout/activity_teaser.xml" value="0.19375" />
+        <entry key="app/src/main/res/menu/bottom_nav.xml" value="0.19375" />
       </map>
     </option>
   </component>

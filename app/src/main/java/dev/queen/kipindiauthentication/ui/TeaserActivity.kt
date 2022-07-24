@@ -17,14 +17,22 @@ class TeaserActivity : AppCompatActivity() {
     }
 
     fun setBinding(){
-        binding.btnTeaserLogin.setOnClickListener {
-            val intent = Intent(this, Sign_InActivity::class.java)
-            startActivity(intent)
+        binding.btnSignIn.setOnClickListener {
+            startActivity(
+                Intent(
+                    this,
+                    Sign_InActivity::class.java
+                )
+            )
         }
 
-        binding.btnSignUp.setOnClickListener {
-            val intent = Intent(this, RegisterActivity::class.java)
-            startActivity(intent)
+        binding.btnRegister.setOnClickListener {
+            startActivity(
+                Intent(
+                    this,
+                    RegisterActivity::class.java
+                )
+            )
         }
     }
 }

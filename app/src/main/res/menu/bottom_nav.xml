@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:title="Home"
+        android:icon="@drawable/home"
+        android:id="@+id/homeMenu"
+        />
+
+    <item
+        android:id="@+id/favs"
+        android:title="Favotite"
+        android:icon="@drawable/favorite_24"
+        />
+
+    <item android:id="@+id/latest"
+        android:title="Latest Movies"
+        android:icon= "@drawable/tv_24"/>
+
+    <item android:id="@+id/book"
+        android:title="BookMarks"
+        android:icon="@drawable/book_24"/>
+
+</menu>

@@ -11,19 +11,19 @@
         android:id="@+id/tvInfo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="240dp"
+        android:layout_marginTop="140dp"
         android:fontFamily="@font/poppins"
         android:text="@string/teaser_info"
         android:textAlignment="center"
         android:textColor="@color/white"
         android:textSize="25sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.8"
+        app:layout_constraintHorizontal_bias="0.466"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/btnTeaserLogin"
+        android:id="@+id/btnSignIn"
         android:layout_width="0dp"
         android:layout_height="63dp"
         android:layout_marginStart="24dp"
@@ -38,18 +38,18 @@
         app:layout_constraintTop_toBottomOf="@+id/tvInfo" />
 
     <Button
-        android:id="@+id/btnSignUp"
+        android:id="@+id/btnRegister"
         android:layout_width="0dp"
         android:layout_height="63dp"
         android:layout_marginStart="24dp"
         android:layout_marginTop="32dp"
         android:layout_marginEnd="24dp"
         android:backgroundTint="@color/cardview_shadow_end_color"
-        android:text="Register"
+        android:text="@string/register"
         app:cornerRadius="17dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnTeaserLogin"
+        app:layout_constraintTop_toBottomOf="@+id/btnSignIn"
         app:strokeColor="@color/teal_200"
         app:strokeWidth="5dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>

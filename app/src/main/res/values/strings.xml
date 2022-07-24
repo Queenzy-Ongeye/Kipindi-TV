@@ -1,4 +1,7 @@
 <resources>
     <string name="app_name">KipindiAuthentication</string>
     <string name="teaser_info">Unlimited experience with movies \n from all over the world.</string>
+    <string name="create_account">Create account</string>
+    <string name="register">Register</string>
+    <string name="signup">Don\'t have an account? \n Sign Up</string>
 </resources>

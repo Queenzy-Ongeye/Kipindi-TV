@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "563125841423",
+    "project_id": "kipindi-9bdb5",
+    "storage_bucket": "kipindi-9bdb5.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:563125841423:android:d1746b901d0238950cbd7a",
+        "android_client_info": {
+          "package_name": "dev.queen.kipindiauthentication"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "563125841423-bqmsm19a73mkt4ah746s67phdb1fjlkp.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBqEQU4OlZ8UG9iVtdAOEmPYwYszusBlHM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "563125841423-bqmsm19a73mkt4ah746s67phdb1fjlkp.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
