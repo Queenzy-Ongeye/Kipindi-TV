@@ -15,6 +15,7 @@ class HomeActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         bindingHome = ActivityHomeBinding.inflate(layoutInflater)
         setContentView(bindingHome.root)
+        setUpBtmNav()
     }
 
     fun setUpBtmNav() {
