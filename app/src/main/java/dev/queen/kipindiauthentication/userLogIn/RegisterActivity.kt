@@ -29,9 +29,6 @@ class RegisterActivity : AppCompatActivity() {
     }
 
     fun setOnClicks() {
-        val actionBar: ActionBar? = supportActionBar
-        actionBar!!.setDisplayUseLogoEnabled(true);
-        actionBar!!.setDisplayShowHomeEnabled(true);
         bindingReg.btnReg.setOnClickListener {
             createUser()
 
